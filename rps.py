@@ -26,9 +26,13 @@ while True:
         print('You won')
         user_wins += 1
     elif user_input == computer_pick:
-        print('You won')
+        print("It's a tie")
         user_wins += 1
         continue
     else:
         print('You lost!')
         computer_wins += 1
+
+print(f'You won {user_wins} times')
+print(f'The computer won {computer_wins} times.')
+print('Goodbye!')
