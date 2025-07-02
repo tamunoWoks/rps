@@ -54,3 +54,29 @@ while True:
     elif move_number == 3:
         computer_move = 's'
         print('SCISSORS')
+
+    # Determine game outcome
+    # Tie condition
+    if player_move == computer_move:
+        print('It is a tie!')
+        ties = ties + 1 # Increment tie counter
+    # Win conditions
+    elif player_move == 'r' and computer_move == 's':
+        print('You win!')
+        wins = wins + 1 # Increment win counter
+    elif player_move == 'p' and computer_move == 'r':
+        print('You win!')
+        wins = wins + 1
+    elif player_move == 's' and computer_move == 'p':
+        print('You win!')
+        wins = wins + 1
+    # Lose conditions
+    elif player_move == 'r' and computer_move == 'p':
+        print('You lose!')
+        losses = losses + 1 # Increment loss counter
+    elif player_move == 'p' and computer_move == 's':
+        print('You lose!')
+        losses = losses + 1
+    elif player_move == 's' and computer_move == 'r':
+        print('You lose!')
+        losses = losses + 1
