@@ -34,3 +34,10 @@ while True:
         # Show error message for invalid input
         print('Type one of r, p, s, or q.')
     
+    # Display player's move
+    if player_move == 'r':
+        print('ROCK versus...')
+    elif player_move == 'p':
+        print('PAPER versus...')
+    elif player_move == 's':
+        print('SCISSORS versus...')
