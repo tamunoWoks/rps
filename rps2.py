@@ -41,3 +41,16 @@ while True:
         print('PAPER versus...')
     elif player_move == 's':
         print('SCISSORS versus...')
+
+    # Generate computer's move (random integer 1-3)
+    move_number = random.randint(1, 3)
+    # Convert number to move and display
+    if move_number == 1:
+        computer_move = 'r'
+        print('ROCK')
+    elif move_number == 2:
+        computer_move = 'p'
+        print('PAPER')
+    elif move_number == 3:
+        computer_move = 's'
+        print('SCISSORS')
